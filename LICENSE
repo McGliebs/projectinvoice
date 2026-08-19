@@ -1,0 +1,157 @@
+GERADOR DE FATURAS — END-USER LICENCE AGREEMENT (COMMERCIAL)
+
+Copyright (c) 2026 Steven Faria. All rights reserved.
+"Developed by Steven Faria."
+
+IMPORTANT — READ BEFORE USING. This Agreement is a legal contract between you
+(the "Licensee", an individual or an organisation) and Steven Faria (the
+"Licensor") for the Gerador de Faturas software, including its executable,
+source code, data files, and documentation (the "Software"). By installing,
+copying, or using the Software, you accept this Agreement. If you do not accept
+it, do not install or use the Software.
+
+
+1. GRANT OF LICENCE
+
+Subject to payment of the applicable fees and to continued compliance with this
+Agreement, the Licensor grants the Licensee a non-exclusive, non-transferable,
+non-sublicensable, revocable licence to install and use the Software for the
+Licensee's own internal travel-agency business, limited to the number of seats,
+sites, or workstations agreed in writing between the parties.
+
+The Software is licensed, not sold. No rights are granted other than those
+expressly stated in this Agreement.
+
+
+2. RESTRICTIONS
+
+The Licensee shall not, and shall not permit any third party to:
+
+  (a) sell, resell, rent, lease, lend, sublicense, publish, or otherwise
+      distribute the Software or make it available to any third party;
+  (b) use the Software to provide a service bureau, hosted, or time-sharing
+      offering to third parties;
+  (c) copy the Software except for one reasonable back-up copy;
+  (d) modify, adapt, translate, or create derivative works of the Software;
+  (e) reverse engineer, decompile, or disassemble the Software, or otherwise
+      attempt to derive its source code, except to the extent such restriction
+      is expressly prohibited by applicable law;
+  (f) remove, obscure, or alter any copyright, trademark, authorship, or other
+      proprietary notice in the Software, including the "Developed by Steven
+      Faria" attribution displayed by the application; or
+  (g) use the Software in breach of any applicable law or of the terms of any
+      third-party service or document processed through it.
+
+
+3. OWNERSHIP
+
+The Software is protected by copyright and other intellectual property laws.
+The Licensor retains all right, title, and interest in and to the Software,
+including all copies, modifications, and derivative works. Feedback provided by
+the Licensee may be used by the Licensor without restriction or obligation.
+
+
+4. LICENSEE DATA AND SOURCE DOCUMENTS
+
+The Software processes booking data, ticket records, and payment-confirmation
+documents supplied by the Licensee (including GDS text and airline or ferry
+operator PDF documents). The Licensee is solely responsible for:
+
+  (a) holding the necessary rights and authority to process those documents and
+      any personal data they contain, and for complying with applicable data
+      protection law (including the GDPR) in respect of that processing;
+  (b) the accuracy and completeness of the data it supplies to the Software; and
+  (c) retaining its own records as required by law.
+
+The Software processes these documents locally on the Licensee's machine. The
+Licensor does not receive, collect, store, or transmit the Licensee's booking
+data or source documents. The Licensor does not control, supply, guarantee, or
+endorse third-party data or documents, and is not responsible for their
+accuracy, completeness, or continued availability.
+
+
+5. NO FISCAL, ACCOUNTING, OR FARE VALIDATION — PROFESSIONAL VERIFICATION REQUIRED
+
+The Licensee acknowledges and agrees that:
+
+  (a) the Software is a formatting and transcription aid. It is NOT certified
+      invoicing software, NOT an accounting or tax system, and NOT a connection
+      to Amadeus or to any other Global Distribution System. It performs no
+      booking, ticketing, fare validation, or fiscal certification;
+  (b) all amounts, taxes, surcharges, totals, passenger and vehicle details,
+      dates, routes, and ticket numbers that the Software produces are derived
+      from the documents supplied by the Licensee and MUST be reviewed by a
+      qualified person before being used to invoice a client, to submit any
+      fiscal or tax declaration, or to enter into any accounting record;
+  (c) the Software does not verify that its output satisfies any invoicing,
+      fiscal, or regulatory requirement in any jurisdiction, including the
+      requirements applicable to certified invoicing software in Portugal; and
+  (d) responsibility for every invoice, quotation, amount, and fiscal
+      declaration rests entirely with the Licensee.
+
+
+6. UPDATES
+
+The Software may check for and install updates automatically from the
+Licensor's public release channel. Updates are provided under this Agreement
+unless accompanied by separate terms. The Licensor is not obliged to provide
+updates, support, or maintenance except as separately agreed in writing.
+
+
+7. TERM AND TERMINATION
+
+This Agreement applies for the term agreed between the parties. The Licensor
+may terminate it immediately if the Licensee breaches any of its terms. On
+termination the Licensee must cease all use of the Software and delete or
+destroy all copies in its possession. Sections 2 to 5 and 8 to 11 survive
+termination.
+
+
+8. DISCLAIMER OF WARRANTY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED "AS IS" AND
+"AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. THE LICENSOR DOES NOT
+WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT THE
+DATA IT EXTRACTS OR THE AMOUNTS IT CALCULATES ARE ACCURATE OR COMPLETE.
+
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR
+ANY LOSS OF PROFIT, REVENUE, BOOKINGS, DATA, OR GOODWILL, OR FOR ANY FINE,
+PENALTY, TAX ASSESSMENT, OR ACCOUNTING CORRECTION, ARISING OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES. THE LICENSOR'S TOTAL AGGREGATE LIABILITY SHALL NOT
+EXCEED THE LICENCE FEES PAID BY THE LICENSEE FOR THE SOFTWARE IN THE TWELVE (12)
+MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+
+Nothing in this Agreement excludes or limits liability that cannot lawfully be
+excluded or limited, including liability for death or personal injury caused by
+negligence, or for fraud.
+
+
+10. THIRD-PARTY COMPONENTS
+
+The Software is distributed with third-party components licensed by their
+respective owners. See THIRD-PARTY-NOTICES.md. Those components remain subject
+to their own licences, which prevail over this Agreement in respect of them.
+
+
+11. GOVERNING LAW
+
+This Agreement is governed by the laws of Portugal, and the parties submit to
+the exclusive jurisdiction of the courts of Funchal, Madeira, Portugal.
+
+
+12. ENTIRE AGREEMENT
+
+This Agreement, together with any written licence order agreed between the
+parties, is the entire agreement concerning the Software and supersedes all
+prior proposals and communications. If any provision is held unenforceable, the
+remainder stays in force.
+
+
+Contact: Steven Faria — <steven.faria92@gmail.com>
