@@ -1,11 +1,11 @@
-GERADOR DE FATURAS — END-USER LICENCE AGREEMENT (COMMERCIAL)
+GERADOR FATURAS PARA SSM — END-USER LICENCE AGREEMENT (COMMERCIAL)
 
 Copyright (c) 2026 Steven Faria. All rights reserved.
 "Developed by Steven Faria."
 
 IMPORTANT — READ BEFORE USING. This Agreement is a legal contract between you
 (the "Licensee", an individual or an organisation) and Steven Faria (the
-"Licensor") for the Gerador de Faturas software, including its executable,
+"Licensor") for the Gerador Faturas para SSM software, including its executable,
 source code, data files, and documentation (the "Software"). By installing,
 copying, or using the Software, you accept this Agreement. If you do not accept
 it, do not install or use the Software.
@@ -146,7 +146,34 @@ This Agreement is governed by the laws of Portugal, and the parties submit to
 the exclusive jurisdiction of the courts of Funchal, Madeira, Portugal.
 
 
-12. ENTIRE AGREEMENT
+12. AI-ASSISTED DEVELOPMENT (TRANSPARENCY DISCLOSURE)
+
+The Licensor discloses that the Software was developed entirely with the
+assistance of generative artificial intelligence, under the direction, review,
+and editorial control of the Licensor, who remains its author and provider for
+all legal purposes.
+
+The Software itself contains NO artificial-intelligence component. It performs
+no machine learning, no inference, and no automated decision-making. All of its
+processing is deterministic: identical input always produces identical output.
+No licensee data, document, or personal data is transmitted to any AI system,
+to the Licensor, or to any third party; all processing occurs locally on the
+Licensee's machine.
+
+Consequently, the Software is not an "AI system" within the meaning of
+Article 3(1) of Regulation (EU) 2024/1689 (the Artificial Intelligence Act),
+and the transparency obligations of Article 50 of that Regulation do not apply
+to it. This disclosure is therefore made voluntarily, in the interest of
+transparency, and shall not be construed as an admission that the Software
+falls within the scope of that Regulation.
+
+This clause does not reduce the Licensor's obligations or the Licensee's rights
+under any mandatory provision of law. In particular, it does not diminish the
+Licensee's verification duties under Section 5, which apply in full regardless
+of how the Software was developed.
+
+
+13. ENTIRE AGREEMENT
 
 This Agreement, together with any written licence order agreed between the
 parties, is the entire agreement concerning the Software and supersedes all
