@@ -1,4 +1,4 @@
-# Gerador de Faturas
+# Gerador Faturas para SSM
 
 Converte dados de faturação aérea e marítima em faturas de texto formatadas.
 *Converts airline and ferry billing data into clean, formatted text invoices.*
@@ -71,7 +71,7 @@ para mostrar apenas o total.
 
 ### Licença
 
-O **Gerador de Faturas** é software **comercial e proprietário** — licenciado,
+O **Gerador Faturas para SSM** é software **comercial e proprietário** — licenciado,
 não vendido. Copyright © 2026 Steven Faria. Todos os direitos reservados.
 
 A utilização exige uma licença válida de Steven Faria. Não é permitida a
@@ -83,6 +83,27 @@ redistribuição, a revenda nem a engenharia inversa. Consulte a
 > faturação certificada nem um sistema de contabilidade. Todos os valores,
 > taxas e totais que produz têm de ser verificados por pessoa qualificada antes
 > de serem usados para faturar um cliente ou em qualquer declaração fiscal.
+
+### 🤖 Desenvolvimento assistido por IA
+
+Este software foi **desenvolvido integralmente com assistência de inteligência
+artificial generativa**, sob direcção, revisão e controlo editorial de Steven
+Faria, que continua a ser o seu autor e responsável para todos os efeitos
+legais.
+
+**A aplicação em si não contém qualquer componente de IA.** Não faz
+aprendizagem automática, inferência nem decisões automatizadas: o processamento
+é totalmente determinístico — a mesma entrada produz sempre a mesma saída.
+Nenhum dado, documento ou dado pessoal do utilizador é enviado para sistemas de
+IA, para o autor ou para terceiros; todo o processamento decorre localmente na
+máquina do utilizador.
+
+> **Nota legal:** por não ser um «sistema de IA» na acepção do artigo 3.º, n.º 1
+> do Regulamento (UE) 2024/1689 (Regulamento da Inteligência Artificial), não
+> lhe são aplicáveis as obrigações de transparência do artigo 50.º do mesmo
+> Regulamento. Esta divulgação é feita **voluntariamente**, por transparência.
+> O dever de verificação por pessoa qualificada mantém-se integralmente (ver
+> cláusula 5 da [LICENSE](LICENSE)).
 
 </details>
 
@@ -142,7 +163,7 @@ empty to show the total only.
 
 ### Licence
 
-**Gerador de Faturas is commercial, proprietary software — licensed, not sold.**
+**Gerador Faturas para SSM is commercial, proprietary software — licensed, not sold.**
 Copyright © 2026 Steven Faria. All rights reserved.
 
 Use requires a valid licence from Steven Faria. Redistribution, resale, and
@@ -154,8 +175,27 @@ and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for the bundled components.
 > totals it produces must be verified by a qualified person before being used to
 > invoice a client or in any fiscal declaration.
 
+### 🤖 AI-assisted development
+
+This software was **developed entirely with the assistance of generative
+artificial intelligence**, under the direction, review, and editorial control of
+Steven Faria, who remains its author and provider for all legal purposes.
+
+**The application itself contains no AI component.** It performs no machine
+learning, no inference, and no automated decision-making: all processing is
+deterministic — identical input always produces identical output. No user data,
+document, or personal data is sent to any AI system, to the author, or to any
+third party; all processing happens locally on the user's machine.
+
+> **Legal note:** because it is not an "AI system" within the meaning of
+> Article 3(1) of Regulation (EU) 2024/1689 (the Artificial Intelligence Act),
+> the transparency obligations of Article 50 of that Regulation do not apply to
+> it. This disclosure is made **voluntarily**, in the interest of transparency.
+> The duty of verification by a qualified person applies in full (see clause 5
+> of the [LICENSE](LICENSE)).
+
 </details>
 
 ---
 
-<sub>Windows · atualizações automáticas via GitHub Releases · Developed by Steven Faria · © 2026 Steven Faria. Todos os direitos reservados.</sub>
+<sub>Windows · atualizações automáticas via GitHub Releases · Developed by Steven Faria · Desenvolvido com assistência de IA / Developed with AI assistance · © 2026 Steven Faria. Todos os direitos reservados.</sub>
