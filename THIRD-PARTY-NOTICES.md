@@ -1,9 +1,9 @@
-# Third-Party Notices — Gerador de Faturas
+# Third-Party Notices — Gerador Faturas para SSM
 
-Gerador de Faturas is distributed as a single Windows executable built with
+Gerador Faturas para SSM is distributed as a single Windows executable built with
 PyInstaller. That executable embeds the components listed below, each licensed
 by its own owner under its own terms. Those terms apply to those components and
-prevail over the Gerador de Faturas licence in respect of them.
+prevail over the Gerador Faturas para SSM licence in respect of them.
 
 All components listed here are distributed under permissive licences that
 allow inclusion in a commercial, closed-source product, provided the copyright
@@ -84,7 +84,7 @@ notices are retained — which this file does.
 - Copyright © 2005–2026 PyInstaller Development Team.
 - Licence: GPL 2.0 or later, **with an explicit exception** permitting the
   bootloader to be linked into, and distributed with, applications that are not
-  themselves open source. This exception is what allows Gerador de Faturas to
+  themselves open source. This exception is what allows Gerador Faturas para SSM to
   be distributed commercially.
 - <https://github.com/pyinstaller/pyinstaller/blob/develop/COPYING.txt>
 
