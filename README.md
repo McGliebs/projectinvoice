@@ -87,6 +87,8 @@ para mostrar apenas o total.
   acompanha automaticamente o resultado.
 - **Barra divisória** — arraste a linha entre a zona de entrada e o OUTPUT
   para dar mais espaço ao resultado.
+- **↗ Notas de versão** — no rodapé, abre a página de versões no navegador,
+  com o histórico de alterações e as descargas.
 - O resultado é **apenas apresentado no ecrã** — não é gravado qualquer
   ficheiro no seu disco.
 - **Afixar na barra de tarefas:** a aplicação mantém uma identidade fixa, pelo
@@ -203,6 +205,8 @@ empty to show the total only.
   result automatically.
 - **Splitter bar** — drag the divider between the input area and OUTPUT to
   give the result more room.
+- **↗ Release notes** — in the footer, opens the releases page in your
+  browser, with the change history and downloads.
 - The result is **shown on screen only** — no file is written to your disk.
 - **Pinning to the taskbar:** the app keeps a fixed identity, so a pinned
   shortcut keeps working across updates. Coming from a version older than
