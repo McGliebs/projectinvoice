@@ -68,6 +68,9 @@ para mostrar apenas o total.
 - **Limpar** — limpa o input, o output e as zonas de largar.
 - O resultado é **apenas apresentado no ecrã** — não é gravado qualquer
   ficheiro no seu disco.
+- **Afixar na barra de tarefas:** a aplicação mantém uma identidade fixa, pelo
+  que o atalho afixado continua a funcionar depois das atualizações. Se vier de
+  uma versão anterior à 1.1.3, remova e volte a afixar **uma única vez**.
 
 ### Licença
 
@@ -160,6 +163,9 @@ empty to show the total only.
 - **🌐 PT / EN** — switches the interface language.
 - **Clear** — clears the input, output and drop zones.
 - The result is **shown on screen only** — no file is written to your disk.
+- **Pinning to the taskbar:** the app keeps a fixed identity, so a pinned
+  shortcut keeps working across updates. Coming from a version older than
+  1.1.3, unpin and re-pin **once**.
 
 ### Licence
 
