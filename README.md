@@ -65,6 +65,13 @@ começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
    - **Passageiros** — nome e NIF;
    - **Viaturas** — matrícula, sem NIF.
 
+### Tarifas
+
+O código da tarifa (*fare basis*) é traduzido para o nome comercial —
+`HL0PLU00` → **PLUS**, `Y3BSC` → **BASIC**. Quando o código não é
+reconhecido (tarifas de tour operador, por exemplo), assume-se a tarifa base
+da companhia: **CLASSIC** na TAP e **BASIC** na SATA.
+
 ### Campo XP (opcional)
 
 Escreva um valor extra na pequena caixa **XP** para o somar às taxas. Aplica-se
@@ -173,6 +180,13 @@ formatted as its own block.
 2. The invoice appears in **OUTPUT**, one block per passenger or vehicle:
    - **Passengers** — name and NIF (tax number);
    - **Vehicles** — licence plate, no NIF.
+
+### Fare types
+
+The fare basis code is translated to its commercial name — `HL0PLU00` →
+**PLUS**, `Y3BSC` → **BASIC**. When the code isn't recognised (tour-operator
+fares, for instance), the airline's base fare is assumed: **CLASSIC** for TAP
+and **BASIC** for SATA.
 
 ### XP field (optional)
 
