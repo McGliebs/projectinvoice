@@ -8,6 +8,7 @@ Converte dados de faturação aérea e marítima em faturas de texto formatadas.
 | Formato | Origem / Source |
 |---|---|
 | **GDS Amadeus** | TAP / SATA — texto colado (voos directos e ligações) |
+| **GDS / ETKT** | PDF do bilhete (`TKT_…`) — vários de uma vez |
 | **EasyJet** | PDF de confirmação de pagamento |
 | **Porto Santo Line** | PDF do bilhete de ferry (passageiros e viaturas) |
 
@@ -40,6 +41,15 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 **Vários bilhetes de uma vez** — cole vários bilhetes em sequência, cada um a
 começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
 (`TWD/TAX`). Cada passageiro é formatado no seu próprio bloco.
+
+### Utilização — GDS / ETKT (PDF de bilhete)
+
+1. Arraste os **PDF de bilhete** (`TKT_…`) para a zona de largar GDS / ETKT —
+   pode largar **vários ao mesmo tempo** (ou clique nela para os seleccionar).
+2. Cada bilhete aparece em **OUTPUT** no seu próprio bloco.
+
+> A caixa **INPUT** continua a funcionar normalmente para colar texto GDS —
+> as duas formas de entrada coexistem.
 
 ### Utilização — EasyJet
 
@@ -136,6 +146,15 @@ click **More info → Run anyway**.
 **Several tickets at once** — paste multiple tickets in sequence, each starting
 with a `TKT-…` line followed by its tax detail (`TWD/TAX`). Each passenger is
 formatted as its own block.
+
+### Using it — GDS / ETKT (ticket PDF)
+
+1. Drag the **ticket PDFs** (`TKT_…`) onto the GDS / ETKT drop zone — you can
+   drop **several at once** (or click the zone to select them).
+2. Each ticket appears in **OUTPUT** as its own block.
+
+> The **INPUT** box still works as before for pasting GDS text — both input
+> methods coexist.
 
 ### Using it — EasyJet
 
