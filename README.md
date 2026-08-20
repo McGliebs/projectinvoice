@@ -44,7 +44,7 @@ começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
 
 ### Utilização — GDS / ETKT (PDF de bilhete)
 
-1. Arraste os **PDF de bilhete** (`TKT_…`) para a zona de largar GDS / ETKT —
+1. Arraste os **PDF de bilhete** (`TKT_…`) para o cartão **GDS / ETKT** —
    pode largar **vários ao mesmo tempo** (ou clique nela para os seleccionar).
 2. Cada bilhete aparece em **OUTPUT** no seu próprio bloco.
 
@@ -53,14 +53,14 @@ começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
 
 ### Utilização — EasyJet
 
-1. Arraste o **PDF de confirmação de pagamento** para a zona de largar da
-   EasyJet (ou clique nela para procurar o ficheiro).
+1. Arraste o **PDF de confirmação de pagamento** para o cartão **EasyJet**
+   (ou clique nele para procurar o ficheiro).
 2. A fatura aparece em **OUTPUT** — um bloco por passageiro.
 
 ### Utilização — Porto Santo Line (ferry)
 
-1. Arraste o **PDF do bilhete de ferry** para a zona de largar da Porto Santo
-   Line (ou clique nela para procurar o ficheiro).
+1. Arraste o **PDF do bilhete de ferry** para o cartão **Porto Santo Line**
+   (ou clique nele para procurar o ficheiro).
 2. A fatura aparece em **OUTPUT**, com um bloco por passageiro ou viatura:
    - **Passageiros** — nome e NIF;
    - **Viaturas** — matrícula, sem NIF.
@@ -75,7 +75,11 @@ para mostrar apenas o total.
 
 - **☀ / 🌙** — alterna entre tema claro e escuro.
 - **🌐 PT / EN** — alterna o idioma da interface.
-- **Limpar** — limpa o input, o output e as zonas de largar.
+- **Limpar** — limpa o input, o output e os cartões de largar.
+- **⧉ Expandir** — abre o OUTPUT numa janela própria, redimensionável, que
+  acompanha automaticamente o resultado.
+- **Barra divisória** — arraste a linha entre a zona de entrada e o OUTPUT
+  para dar mais espaço ao resultado.
 - O resultado é **apenas apresentado no ecrã** — não é gravado qualquer
   ficheiro no seu disco.
 - **Afixar na barra de tarefas:** a aplicação mantém uma identidade fixa, pelo
@@ -149,7 +153,7 @@ formatted as its own block.
 
 ### Using it — GDS / ETKT (ticket PDF)
 
-1. Drag the **ticket PDFs** (`TKT_…`) onto the GDS / ETKT drop zone — you can
+1. Drag the **ticket PDFs** (`TKT_…`) onto the **GDS / ETKT** card — you can
    drop **several at once** (or click the zone to select them).
 2. Each ticket appears in **OUTPUT** as its own block.
 
@@ -158,14 +162,14 @@ formatted as its own block.
 
 ### Using it — EasyJet
 
-1. Drag the **payment-confirmation PDF** onto the EasyJet drop zone (or click
-   the zone to browse for the file).
+1. Drag the **payment-confirmation PDF** onto the **EasyJet** card (or click
+   it to browse for the file).
 2. The invoice appears in **OUTPUT** — one block per passenger.
 
 ### Using it — Porto Santo Line (ferry)
 
-1. Drag the **ferry ticket PDF** onto the Porto Santo Line drop zone (or click
-   the zone to browse for the file).
+1. Drag the **ferry ticket PDF** onto the **Porto Santo Line** card (or click
+   it to browse for the file).
 2. The invoice appears in **OUTPUT**, one block per passenger or vehicle:
    - **Passengers** — name and NIF (tax number);
    - **Vehicles** — licence plate, no NIF.
@@ -180,7 +184,11 @@ empty to show the total only.
 
 - **☀ / 🌙** — toggles light / dark theme.
 - **🌐 PT / EN** — switches the interface language.
-- **Clear** — clears the input, output and drop zones.
+- **Clear** — clears the input, output and drop cards.
+- **⧉ Expand** — opens OUTPUT in its own resizable window, which follows the
+  result automatically.
+- **Splitter bar** — drag the divider between the input area and OUTPUT to
+  give the result more room.
 - The result is **shown on screen only** — no file is written to your disk.
 - **Pinning to the taskbar:** the app keeps a fixed identity, so a pinned
   shortcut keeps working across updates. Coming from a version older than
