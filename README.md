@@ -78,6 +78,12 @@ Escreva um valor extra na pequena caixa **XP** para o somar às taxas. Aplica-se
 aos três formatos e é incluído no **Valor Total** de cada bloco. Deixe vazio
 para mostrar apenas o total.
 
+### Exportar para o SIGAV
+
+Depois de gerar o resultado, **⇥ Copiar para SIGAV** copia as linhas já no
+formato da tabela de faturação (Tipo de Custo · Descrição · Qtd · Valor),
+prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
+
 ### Dicas
 
 - **☀ / 🌙** — alterna entre tema claro e escuro.
@@ -195,6 +201,12 @@ and **BASIC** for SATA.
 Type an extra amount in the small **XP** box to add it to the taxes. It applies
 to all three formats and is included in each block's **Valor Total**. Leave it
 empty to show the total only.
+
+### Exporting to SIGAV
+
+Once the result is generated, **⇥ Copy for SIGAV** copies the rows already in
+the billing-table format (Tipo de Custo · Descrição · Qtd · Valor), ready to
+paste. Applies to GDS/ETKT air tickets.
 
 ### Tips
 
