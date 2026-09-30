@@ -1,4 +1,4 @@
-# Gerador Faturas para SSM
+# Gerador Faturas
 
 Converte dados de faturação aérea e marítima em faturas de texto formatadas.
 *Converts airline and ferry billing data into clean, formatted text invoices.*
@@ -42,28 +42,22 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
 (`TWD/TAX`). Cada passageiro é formatado no seu próprio bloco.
 
-### Utilização — GDS / ETKT (PDF de bilhete)
+### Utilização — PDF (GDS / ETKT, EasyJet, Porto Santo Line)
 
-1. Arraste os **PDF de bilhete** (`TKT_…`) para o cartão **GDS / ETKT** —
-   pode largar **vários ao mesmo tempo** (ou clique nela para os seleccionar).
-2. Cada bilhete aparece em **OUTPUT** no seu próprio bloco.
+1. Arraste os PDF para a caixa **DOCUMENTOS** (ou clique nela para os
+   seleccionar). Pode largar **um ou vários** de uma vez, ou ir juntando um a
+   um — cada largada soma-se aos que já lá estão, e podem ser de formatos
+   diferentes.
+2. O formato é **reconhecido sozinho** a partir do conteúdo do PDF:
+   - **GDS / ETKT** — PDF do bilhete (`TKT_…`), um bloco por bilhete;
+   - **EasyJet** — PDF de confirmação de pagamento, um bloco por passageiro;
+   - **Porto Santo Line** — PDF do bilhete de ferry, um bloco por passageiro
+     (nome e NIF) ou viatura (matrícula, sem NIF).
+3. Tudo aparece junto em **OUTPUT**. Um ficheiro já carregado é ignorado se
+   for largado outra vez.
 
 > A caixa **INPUT** continua a funcionar normalmente para colar texto GDS —
-> as duas formas de entrada coexistem.
-
-### Utilização — EasyJet
-
-1. Arraste o **PDF de confirmação de pagamento** para o cartão **EasyJet**
-   (ou clique nele para procurar o ficheiro).
-2. A fatura aparece em **OUTPUT** — um bloco por passageiro.
-
-### Utilização — Porto Santo Line (ferry)
-
-1. Arraste o **PDF do bilhete de ferry** para o cartão **Porto Santo Line**
-   (ou clique nele para procurar o ficheiro).
-2. A fatura aparece em **OUTPUT**, com um bloco por passageiro ou viatura:
-   - **Passageiros** — nome e NIF;
-   - **Viaturas** — matrícula, sem NIF.
+> mas **Gerar TXT** a partir do texto substitui os PDF carregados.
 
 ### Tarifas
 
@@ -84,11 +78,18 @@ Depois de gerar o resultado, **⇥ Copiar para SIGAV** copia as linhas já no
 formato da tabela de faturação (Tipo de Custo · Descrição · Qtd · Valor),
 prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
+> **Nota técnica:** para a extensão de navegador poder preencher a tabela
+> sozinha, a aplicação disponibiliza estas linhas numa ponte local, acessível
+> **apenas a partir do próprio computador** (`127.0.0.1`). Não abre porta na
+> rede nem no firewall, é só de leitura, e o conteúdo expira ao fim de 3
+> minutos. Sem a extensão instalada, nada disto é usado — o botão continua a
+> copiar para a área de transferência como sempre.
+
 ### Dicas
 
 - **☀ / 🌙** — alterna entre tema claro e escuro.
 - **🌐 PT / EN** — alterna o idioma da interface.
-- **Limpar** — limpa o input, o output e os cartões de largar.
+- **Limpar** — limpa o input, o output e todos os PDF carregados.
 - **⧉ Expandir** — abre o OUTPUT numa janela própria, redimensionável, que
   acompanha automaticamente o resultado.
 - **Barra divisória** — arraste a linha entre a zona de entrada e o OUTPUT
@@ -103,7 +104,7 @@ prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
 ### Licença
 
-O **Gerador Faturas para SSM** é software **comercial e proprietário** — licenciado,
+O **Gerador Faturas** é software **comercial e proprietário** — licenciado,
 não vendido. Copyright © 2026 Steven Faria. Todos os direitos reservados.
 
 A utilização exige uma licença válida de Steven Faria. Não é permitida a
@@ -166,28 +167,21 @@ click **More info → Run anyway**.
 with a `TKT-…` line followed by its tax detail (`TWD/TAX`). Each passenger is
 formatted as its own block.
 
-### Using it — GDS / ETKT (ticket PDF)
+### Using it — PDFs (GDS / ETKT, EasyJet, Porto Santo Line)
 
-1. Drag the **ticket PDFs** (`TKT_…`) onto the **GDS / ETKT** card — you can
-   drop **several at once** (or click the zone to select them).
-2. Each ticket appears in **OUTPUT** as its own block.
+1. Drag the PDFs onto the **DOCUMENTS** box (or click it to select them). You
+   can drop **one or several** at once, or add them one at a time — each drop
+   adds to what is already loaded, and formats can be mixed.
+2. The format is **detected automatically** from the PDF's content:
+   - **GDS / ETKT** — ticket PDF (`TKT_…`), one block per ticket;
+   - **EasyJet** — payment-confirmation PDF, one block per passenger;
+   - **Porto Santo Line** — ferry ticket PDF, one block per passenger (name
+     and NIF) or vehicle (licence plate, no NIF).
+3. Everything appears together in **OUTPUT**. A file that is already loaded is
+   skipped if dropped again.
 
-> The **INPUT** box still works as before for pasting GDS text — both input
-> methods coexist.
-
-### Using it — EasyJet
-
-1. Drag the **payment-confirmation PDF** onto the **EasyJet** card (or click
-   it to browse for the file).
-2. The invoice appears in **OUTPUT** — one block per passenger.
-
-### Using it — Porto Santo Line (ferry)
-
-1. Drag the **ferry ticket PDF** onto the **Porto Santo Line** card (or click
-   it to browse for the file).
-2. The invoice appears in **OUTPUT**, one block per passenger or vehicle:
-   - **Passengers** — name and NIF (tax number);
-   - **Vehicles** — licence plate, no NIF.
+> The **INPUT** box still works as before for pasting GDS text — but
+> **Generate TXT** from text replaces the loaded PDFs.
 
 ### Fare types
 
@@ -208,11 +202,17 @@ Once the result is generated, **⇥ Copy for SIGAV** copies the rows already in
 the billing-table format (Tipo de Custo · Descrição · Qtd · Valor), ready to
 paste. Applies to GDS/ETKT air tickets.
 
+> **Technical note:** so the browser extension can fill the table on its own,
+> the app also serves these rows over a local bridge reachable **only from this
+> computer** (`127.0.0.1`). It opens no network or firewall port, is read-only,
+> and the content expires after 3 minutes. Without the extension installed none
+> of this is used — the button still copies to the clipboard as before.
+
 ### Tips
 
 - **☀ / 🌙** — toggles light / dark theme.
 - **🌐 PT / EN** — switches the interface language.
-- **Clear** — clears the input, output and drop cards.
+- **Clear** — clears the input, output and all loaded PDFs.
 - **⧉ Expand** — opens OUTPUT in its own resizable window, which follows the
   result automatically.
 - **Splitter bar** — drag the divider between the input area and OUTPUT to
@@ -226,7 +226,7 @@ paste. Applies to GDS/ETKT air tickets.
 
 ### Licence
 
-**Gerador Faturas para SSM is commercial, proprietary software — licensed, not sold.**
+**Gerador Faturas is commercial, proprietary software — licensed, not sold.**
 Copyright © 2026 Steven Faria. All rights reserved.
 
 Use requires a valid licence from Steven Faria. Redistribution, resale, and
