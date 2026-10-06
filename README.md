@@ -7,7 +7,7 @@ Converte dados de faturação aérea e marítima em faturas de texto formatadas.
 
 | Formato | Origem / Source |
 |---|---|
-| **GDS Amadeus** | TAP / SATA — texto colado (voos directos e ligações) |
+| **GDS Amadeus** | TAP / SATA — ecrã do bilhete guardado em PDF (voos directos e ligações) |
 | **GDS / ETKT** | PDF do bilhete (`TKT_…`) — vários de uma vez |
 | **EasyJet** | PDF de confirmação de pagamento |
 | **Porto Santo Line** | PDF do bilhete de ferry (passageiros e viaturas) |
@@ -32,16 +32,6 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 > uma versão mais recente, propõe descarregar e instalar; depois reinicia-se
 > sozinha.
 
-### Utilização — GDS (TAP / SATA)
-
-1. Cole o texto GDS em bruto na caixa **INPUT**.
-2. Clique em **⚡ Gerar TXT**.
-3. A fatura formatada aparece em **OUTPUT**, pronta a seleccionar e copiar.
-
-**Vários bilhetes de uma vez** — cole vários bilhetes em sequência, cada um a
-começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
-(`TWD/TAX`). Cada passageiro é formatado no seu próprio bloco.
-
 ### Utilização — PDF (GDS / ETKT, EasyJet, Porto Santo Line)
 
 1. Arraste os PDF para a caixa **DOCUMENTOS** (ou clique nela para os
@@ -49,15 +39,13 @@ começar por uma linha `TKT-…` seguida do respectivo detalhe de taxas
    um — cada largada soma-se aos que já lá estão, e podem ser de formatos
    diferentes.
 2. O formato é **reconhecido sozinho** a partir do conteúdo do PDF:
-   - **GDS / ETKT** — PDF do bilhete (`TKT_…`), um bloco por bilhete;
+   - **GDS / ETKT** — PDF do bilhete (`TKT_…`), ou o ecrã GDS do bilhete
+     guardado em PDF, um bloco por bilhete;
    - **EasyJet** — PDF de confirmação de pagamento, um bloco por passageiro;
    - **Porto Santo Line** — PDF do bilhete de ferry, um bloco por passageiro
      (nome e NIF) ou viatura (matrícula, sem NIF).
 3. Tudo aparece junto em **OUTPUT**. Um ficheiro já carregado é ignorado se
    for largado outra vez.
-
-> A caixa **INPUT** continua a funcionar normalmente para colar texto GDS —
-> mas **Gerar TXT** a partir do texto substitui os PDF carregados.
 
 ### Tarifas
 
@@ -89,10 +77,8 @@ prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
 - **☀ / 🌙** — alterna entre tema claro e escuro.
 - **🌐 PT / EN** — alterna o idioma da interface.
-- **Limpar** — limpa o input, o output e todos os PDF carregados.
-- **⧉ Expandir** — abre o OUTPUT numa janela própria, redimensionável, que
-  acompanha automaticamente o resultado.
-- **Barra divisória** — arraste a linha entre a zona de entrada e o OUTPUT
+- **Limpar** — limpa o OUTPUT e todos os PDF carregados.
+- **Barra divisória** — arraste a linha entre a caixa dos PDF e o OUTPUT
   para dar mais espaço ao resultado.
 - **↗ Notas de versão** — no rodapé, abre a página de versões no navegador,
   com o histórico de alterações e as descargas.
@@ -157,31 +143,19 @@ click **More info → Run anyway**.
 > The app checks for updates automatically on startup. When a newer version is
 > available it offers to download and install it, then restarts itself.
 
-### Using it — GDS (TAP / SATA)
-
-1. Paste the raw GDS text into the **INPUT** box.
-2. Click **⚡ Generate TXT**.
-3. The formatted invoice appears in **OUTPUT**, ready to select and copy.
-
-**Several tickets at once** — paste multiple tickets in sequence, each starting
-with a `TKT-…` line followed by its tax detail (`TWD/TAX`). Each passenger is
-formatted as its own block.
-
 ### Using it — PDFs (GDS / ETKT, EasyJet, Porto Santo Line)
 
 1. Drag the PDFs onto the **DOCUMENTS** box (or click it to select them). You
    can drop **one or several** at once, or add them one at a time — each drop
    adds to what is already loaded, and formats can be mixed.
 2. The format is **detected automatically** from the PDF's content:
-   - **GDS / ETKT** — ticket PDF (`TKT_…`), one block per ticket;
+   - **GDS / ETKT** — ticket PDF (`TKT_…`), or the GDS ticket display saved
+     as a PDF, one block per ticket;
    - **EasyJet** — payment-confirmation PDF, one block per passenger;
    - **Porto Santo Line** — ferry ticket PDF, one block per passenger (name
      and NIF) or vehicle (licence plate, no NIF).
 3. Everything appears together in **OUTPUT**. A file that is already loaded is
    skipped if dropped again.
-
-> The **INPUT** box still works as before for pasting GDS text — but
-> **Generate TXT** from text replaces the loaded PDFs.
 
 ### Fare types
 
@@ -212,10 +186,8 @@ paste. Applies to GDS/ETKT air tickets.
 
 - **☀ / 🌙** — toggles light / dark theme.
 - **🌐 PT / EN** — switches the interface language.
-- **Clear** — clears the input, output and all loaded PDFs.
-- **⧉ Expand** — opens OUTPUT in its own resizable window, which follows the
-  result automatically.
-- **Splitter bar** — drag the divider between the input area and OUTPUT to
+- **Clear** — clears OUTPUT and all loaded PDFs.
+- **Splitter bar** — drag the divider between the PDF box and OUTPUT to
   give the result more room.
 - **↗ Release notes** — in the footer, opens the releases page in your
   browser, with the change history and downloads.
