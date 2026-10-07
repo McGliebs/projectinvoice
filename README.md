@@ -34,18 +34,21 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 
 ### Utilização — PDF (GDS / ETKT, EasyJet, Porto Santo Line)
 
-1. Arraste os PDF para a caixa **DOCUMENTOS** (ou clique nela para os
-   seleccionar). Pode largar **um ou vários** de uma vez, ou ir juntando um a
-   um — cada largada soma-se aos que já lá estão, e podem ser de formatos
-   diferentes.
+1. Arraste os PDF para qualquer ponto da janela (ou use **Adicionar PDF…**
+   no painel da esquerda). Pode largar **um ou vários** de uma vez, ou ir
+   juntando um a um — cada largada soma-se aos que já lá estão, e podem ser
+   de formatos diferentes.
 2. O formato é **reconhecido sozinho** a partir do conteúdo do PDF:
    - **GDS / ETKT** — PDF do bilhete (`TKT_…`), ou o ecrã GDS do bilhete
      guardado em PDF, um bloco por bilhete;
    - **EasyJet** — PDF de confirmação de pagamento, um bloco por passageiro;
    - **Porto Santo Line** — PDF do bilhete de ferry, um bloco por passageiro
      (nome e NIF) ou viatura (matrícula, sem NIF).
-3. Tudo aparece junto em **OUTPUT**. Um ficheiro já carregado é ignorado se
-   for largado outra vez.
+3. Cada documento fica numa linha da lista à esquerda, com o formato, o nº de
+   bilhete ou reserva, o passageiro e o total. O texto aparece em
+   **Resultado**, um bloco por documento; clicar numa linha da lista salta
+   para o bloco respectivo. Um ficheiro já carregado é ignorado se for largado
+   outra vez.
 
 ### Tarifas
 
@@ -62,7 +65,7 @@ para mostrar apenas o total.
 
 ### Exportar para o SIGAV
 
-Depois de gerar o resultado, **⇥ Copiar para SIGAV** copia as linhas já no
+Depois de carregar os PDF, **Enviar para SIGAV** copia as linhas já no
 formato da tabela de faturação (Tipo de Custo · Descrição · Qtd · Valor),
 prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
@@ -75,13 +78,11 @@ prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
 ### Dicas
 
-- **☀ / 🌙** — alterna entre tema claro e escuro.
-- **🌐 PT / EN** — alterna o idioma da interface.
-- **Limpar** — limpa o OUTPUT e todos os PDF carregados.
-- **Barra divisória** — arraste a linha entre a caixa dos PDF e o OUTPUT
-  para dar mais espaço ao resultado.
-- **↗ Notas de versão** — no rodapé, abre a página de versões no navegador,
-  com o histórico de alterações e as descargas.
+- **Copiar texto** — copia o resultado inteiro, para colar noutro sítio.
+- **×** — passe o rato por cima de uma linha da lista para retirar só esse
+  documento; **Limpar tudo** retira todos.
+- **Tema escuro / Tema claro** e **English** — no fundo do painel da esquerda.
+- **Acerca** — versão, notas de versão e procurar atualizações.
 - O resultado é **apenas apresentado no ecrã** — não é gravado qualquer
   ficheiro no seu disco.
 - **Afixar na barra de tarefas:** a aplicação mantém uma identidade fixa, pelo
@@ -145,17 +146,19 @@ click **More info → Run anyway**.
 
 ### Using it — PDFs (GDS / ETKT, EasyJet, Porto Santo Line)
 
-1. Drag the PDFs onto the **DOCUMENTS** box (or click it to select them). You
-   can drop **one or several** at once, or add them one at a time — each drop
-   adds to what is already loaded, and formats can be mixed.
+1. Drag the PDFs anywhere onto the window (or use **Add PDF…** in the left
+   panel). You can drop **one or several** at once, or add them one at a
+   time — each drop adds to what is already loaded, and formats can be mixed.
 2. The format is **detected automatically** from the PDF's content:
    - **GDS / ETKT** — ticket PDF (`TKT_…`), or the GDS ticket display saved
      as a PDF, one block per ticket;
    - **EasyJet** — payment-confirmation PDF, one block per passenger;
    - **Porto Santo Line** — ferry ticket PDF, one block per passenger (name
      and NIF) or vehicle (licence plate, no NIF).
-3. Everything appears together in **OUTPUT**. A file that is already loaded is
-   skipped if dropped again.
+3. Each document gets a row in the list on the left, with its format, ticket
+   or booking number, passenger and total. The text appears under
+   **Result**, one block per document; clicking a row jumps to its block. A
+   file that is already loaded is skipped if dropped again.
 
 ### Fare types
 
@@ -172,7 +175,7 @@ empty to show the total only.
 
 ### Exporting to SIGAV
 
-Once the result is generated, **⇥ Copy for SIGAV** copies the rows already in
+Once the PDFs are loaded, **Send to SIGAV** copies the rows already in
 the billing-table format (Tipo de Custo · Descrição · Qtd · Valor), ready to
 paste. Applies to GDS/ETKT air tickets.
 
@@ -184,13 +187,12 @@ paste. Applies to GDS/ETKT air tickets.
 
 ### Tips
 
-- **☀ / 🌙** — toggles light / dark theme.
-- **🌐 PT / EN** — switches the interface language.
-- **Clear** — clears OUTPUT and all loaded PDFs.
-- **Splitter bar** — drag the divider between the PDF box and OUTPUT to
-  give the result more room.
-- **↗ Release notes** — in the footer, opens the releases page in your
-  browser, with the change history and downloads.
+- **Copy text** — copies the whole result, to paste elsewhere.
+- **×** — hover over a row in the list to remove just that document; **Clear
+  all** removes them all.
+- **Dark theme / Light theme** and **Português** — at the bottom of the left
+  panel.
+- **About** — version, release notes and checking for updates.
 - The result is **shown on screen only** — no file is written to your disk.
 - **Pinning to the taskbar:** the app keeps a fixed identity, so a pinned
   shortcut keeps working across updates. Coming from a version older than
