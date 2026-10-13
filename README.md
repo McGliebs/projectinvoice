@@ -75,6 +75,28 @@ prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 > rede nem no firewall, é só de leitura, e o conteúdo expira ao fim de 3
 > minutos. Sem a extensão instalada, nada disto é usado — o botão continua a
 > copiar para a área de transferência como sempre.
+>
+> A cópia na área de transferência é só uma reserva (Ctrl+V na página do
+> SIGAV) e é **apagada sozinha** assim que a extensão recebe as linhas — ou ao
+> fim dos 3 minutos —, para que um Ctrl+V por engano noutro sítio não cole
+> nomes, NIF e valores. Se entretanto copiar outra coisa, essa fica.
+
+### Dados — nada fica guardado
+
+**Regra do projecto:** nada sobre os bilhetes fica guardado depois de
+processado. Qualquer funcionalidade nova que guarde dados precisa de uma
+decisão explícita antes de ser feita.
+
+| Onde podiam ficar | O que a aplicação faz |
+|---|---|
+| Disco | **Não grava nada** dos bilhetes: nem resultados, nem histórico, nem registo. Só *lê* os PDF. |
+| Memória | Os documentos só existem enquanto estão na lista; **×**, **Limpar tudo** ou fechar a aplicação descarta-os. |
+| Área de transferência | **Copiar texto** e **Enviar para SIGAV** usam uma cópia privada que o Windows deixa **fora do histórico** (Win+V) e da sincronização na cloud. A do SIGAV sai quando a extensão a recebe (ou aos 3 min). **Ao fechar**, a aplicação limpa o que lá pôs, a não ser que entretanto tenha copiado outra coisa. Se a cópia privada não for possível, aparece um erro — nunca uma cópia normal. |
+| Ponte do SIGAV | As linhas ficam em memória no máximo 3 minutos e depois são **apagadas**. Só responde a este computador (`127.0.0.1`) e desaparece quando a aplicação fecha. |
+
+Garantido por `tests/test_no_data_stored.py`. Fora do alcance da aplicação: os
+ficheiros abertos com **Adicionar PDF…** ficam nos «Itens recentes» do Windows
+(arrastar não deixa rasto), e o que fizer com o texto depois de colado.
 
 ### Dicas
 
@@ -184,6 +206,27 @@ paste. Applies to GDS/ETKT air tickets.
 > computer** (`127.0.0.1`). It opens no network or firewall port, is read-only,
 > and the content expires after 3 minutes. Without the extension installed none
 > of this is used — the button still copies to the clipboard as before.
+>
+> The clipboard copy is only a fallback (Ctrl+V on the SIGAV page) and is
+> **cleared automatically** as soon as the extension receives the rows — or
+> after the 3 minutes — so a mistaken Ctrl+V elsewhere doesn't paste names, tax
+> numbers and amounts. If you copy something else in the meantime, that stays.
+
+### Data — nothing is stored
+
+**Project rule:** nothing about the tickets is kept after processing. Any new
+feature that would keep data needs an explicit decision first.
+
+| Where data could stay | What the app does |
+|---|---|
+| Disk | **Writes nothing** from the tickets: no results, no history, no log. It only *reads* the PDFs. |
+| Memory | Documents exist only while they're in the list; **×**, **Clear all** or closing the app discards them. |
+| Clipboard | **Copy text** and **Send to SIGAV** use a private copy that Windows keeps **out of clipboard history** (Win+V) and cloud sync. The SIGAV copy is removed when the extension receives it (or after 3 min). **On exit** the app clears what it put there, unless you've copied something else since. If a private copy isn't possible you get an error — never an ordinary copy. |
+| SIGAV bridge | Rows are held in memory for at most 3 minutes, then **wiped**. It only answers this computer (`127.0.0.1`) and disappears when the app closes. |
+
+Enforced by `tests/test_no_data_stored.py`. Outside the app's control: files
+opened with **Add PDF…** go into Windows "Recent items" (drag and drop leaves no
+trace), and what you do with the text after pasting it.
 
 ### Tips
 
