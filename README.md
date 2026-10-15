@@ -35,8 +35,8 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 ### Utilização — PDF (GDS / ETKT, EasyJet, Porto Santo Line)
 
 1. Arraste os PDF para qualquer ponto da janela (ou use **Adicionar PDF…**
-   no painel da esquerda). Pode largar **um ou vários** de uma vez, ou ir
-   juntando um a um — cada largada soma-se aos que já lá estão, e podem ser
+   no painel da esquerda). Pode arrastar **um ou vários** de uma vez, ou ir
+   juntando um a um — cada ficheiro arrastado soma-se aos que já lá estão, e podem ser
    de formatos diferentes.
 2. O formato é **reconhecido sozinho** a partir do conteúdo do PDF:
    - **GDS / ETKT** — PDF do bilhete (`TKT_…`), ou o ecrã GDS do bilhete
@@ -47,7 +47,7 @@ sem assinatura digital): clique em **Mais informações → Executar mesmo assim
 3. Cada documento fica numa linha da lista à esquerda, com o formato, o nº de
    bilhete ou reserva, o passageiro e o total. O texto aparece em
    **Resultado**, um bloco por documento; clicar numa linha da lista salta
-   para o bloco respectivo. Um ficheiro já carregado é ignorado se for largado
+   para o bloco respectivo. Um ficheiro já carregado é ignorado se for arrastado
    outra vez.
 
 ### Tarifas
@@ -89,7 +89,7 @@ decisão explícita antes de ser feita.
 
 | Onde podiam ficar | O que a aplicação faz |
 |---|---|
-| Disco | **Não grava nada** dos bilhetes: nem resultados, nem histórico, nem registo. Só *lê* os PDF. |
+| Disco | **Não grava nada** dos bilhetes: nem resultados, nem histórico, nem registo. Só *lê* os PDF. A única coisa guardada é a escolha do tema (`prefs.json`). |
 | Memória | Os documentos só existem enquanto estão na lista; **×**, **Limpar tudo** ou fechar a aplicação descarta-os. |
 | Área de transferência | **Copiar texto** e **Enviar para SIGAV** usam uma cópia privada que o Windows deixa **fora do histórico** (Win+V) e da sincronização na cloud. A do SIGAV sai quando a extensão a recebe (ou aos 3 min). **Ao fechar**, a aplicação limpa o que lá pôs, a não ser que entretanto tenha copiado outra coisa. Se a cópia privada não for possível, aparece um erro — nunca uma cópia normal. |
 | Ponte do SIGAV | As linhas ficam em memória no máximo 3 minutos e depois são **apagadas**. Só responde a este computador (`127.0.0.1`) e desaparece quando a aplicação fecha. |
@@ -103,7 +103,7 @@ ficheiros abertos com **Adicionar PDF…** ficam nos «Itens recentes» do Windo
 - **Copiar texto** — copia o resultado inteiro, para colar noutro sítio.
 - **×** — passe o rato por cima de uma linha da lista para retirar só esse
   documento; **Limpar tudo** retira todos.
-- **Tema escuro / Tema claro** e **English** — no fundo do painel da esquerda.
+- **Tema escuro / Tema claro** e **English** — no fundo do painel da esquerda. O tema fica guardado para a próxima vez.
 - **Acerca** — versão, notas de versão e procurar atualizações.
 - O resultado é **apenas apresentado no ecrã** — não é gravado qualquer
   ficheiro no seu disco.
@@ -219,7 +219,7 @@ feature that would keep data needs an explicit decision first.
 
 | Where data could stay | What the app does |
 |---|---|
-| Disk | **Writes nothing** from the tickets: no results, no history, no log. It only *reads* the PDFs. |
+| Disk | **Writes nothing** from the tickets: no results, no history, no log. It only *reads* the PDFs. The only thing saved is the theme choice (`prefs.json`). |
 | Memory | Documents exist only while they're in the list; **×**, **Clear all** or closing the app discards them. |
 | Clipboard | **Copy text** and **Send to SIGAV** use a private copy that Windows keeps **out of clipboard history** (Win+V) and cloud sync. The SIGAV copy is removed when the extension receives it (or after 3 min). **On exit** the app clears what it put there, unless you've copied something else since. If a private copy isn't possible you get an error — never an ordinary copy. |
 | SIGAV bridge | Rows are held in memory for at most 3 minutes, then **wiped**. It only answers this computer (`127.0.0.1`) and disappears when the app closes. |
@@ -234,7 +234,7 @@ trace), and what you do with the text after pasting it.
 - **×** — hover over a row in the list to remove just that document; **Clear
   all** removes them all.
 - **Dark theme / Light theme** and **Português** — at the bottom of the left
-  panel.
+  panel. The theme is remembered for next time.
 - **About** — version, release notes and checking for updates.
 - The result is **shown on screen only** — no file is written to your disk.
 - **Pinning to the taskbar:** the app keeps a fixed identity, so a pinned
