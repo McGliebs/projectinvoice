@@ -71,8 +71,8 @@ prontas a colar. Aplica-se a bilhetes aéreos GDS/ETKT.
 
 Com vários bilhetes (vários PDF, ou uma reserva com vários passageiros),
 cada bilhete tem uma caixa no Resultado: só os **marcados** seguem para o
-SIGAV. Todos começam marcados; o resumo no topo mostra quantos vão
-(«SIGAV: 4 de 6 bilhetes»). **Copiar texto** continua a copiar tudo.
+SIGAV e para o **Copiar texto**. Todos começam marcados; o resumo no topo
+mostra quantos estão marcados («4 de 6 bilhetes marcados»).
 
 > **Nota técnica:** para a extensão de navegador poder preencher a tabela
 > sozinha, a aplicação disponibiliza estas linhas numa ponte local, acessível
