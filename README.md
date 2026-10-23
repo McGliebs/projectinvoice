@@ -74,6 +74,15 @@ cada bilhete tem uma caixa no Resultado: só os **marcados** seguem para o
 SIGAV e para o **Copiar texto**. Todos começam marcados; o resumo no topo
 mostra quantos estão marcados («4 de 6 bilhetes marcados»).
 
+**Total diferente do bilhete = não envia.** No MCT, uma fatura que não bate
+com a tarifa e as taxas do bilhete tem o reembolso recusado. Se o total de um
+documento não bate com o do bilhete (a vermelho na lista), **Enviar para
+SIGAV** recusa-o e diz qual é; desmarque-o para enviar os restantes.
+
+**DV e XP.** Nos voos domésticos a DV (taxa de grupo da TAP) conta junto com o
+XP — o limite do MCT é para as duas somadas. Num bilhete com DV, o XP escrito
+na caixa é o total das duas e lança-se XP − DV (XP 70 com DV 6,00 → 64.00XP).
+
 > **Nota técnica:** para a extensão de navegador poder preencher a tabela
 > sozinha, a aplicação disponibiliza estas linhas numa ponte local, acessível
 > **apenas a partir do próprio computador** (`127.0.0.1`). Não abre porta na
